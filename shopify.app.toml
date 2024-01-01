@@ -1,0 +1,27 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+name = "shpf-cli-app-remix-sample"
+client_id = "8d72d11dceece41c6743afa400714602"
+application_url = "https://hospital-derby-accompanying-remainder.trycloudflare.com"
+embedded = true
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+scopes = "write_products"
+
+[auth]
+redirect_urls = [
+  "https://hospital-derby-accompanying-remainder.trycloudflare.com/auth/callback",
+  "https://hospital-derby-accompanying-remainder.trycloudflare.com/auth/shopify/callback",
+  "https://hospital-derby-accompanying-remainder.trycloudflare.com/api/auth/callback"
+]
+
+[webhooks]
+api_version = "2023-10"
+
+[pos]
+embedded = false
+
+[build]
+automatically_update_urls_on_dev = true
+dev_store_url = "store-test-miura.myshopify.com"
